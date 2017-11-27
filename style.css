@@ -1,0 +1,81 @@
+body {
+  font-family: 'Barlow', sans-serif;
+}
+#reviewDiv {
+  padding: 20px;
+  background-color: #dbd385;
+  background: linear-gradient(#ececec, #969696);
+  min-width: 400px;
+  max-width: 650px;
+  min-height: 200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row;
+}
+#stars {
+  user-select: none;
+  font-size: 25px;
+  cursor: pointer;
+  color: #b4b4b4;
+}
+#stars .filledStars {
+  color: #c7ac32;
+}
+#stars .hoverStar {
+  color: #5c5a2f;
+}
+#image img {
+  max-height: 300px;
+  max-width: 350px;
+  border-radius: 15px;
+}
+#words {
+  flex: 1;
+  padding-left: 15px;
+  max-width: 400px;
+}
+#words h1 {
+  font-weight: bold;
+  font-size: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-shadow: 1px 2px 5px #424242;
+}
+#words ul {
+  list-style-type: none;
+  padding-left: 15px;
+}
+#words li {
+  font-weight: bold;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#filmSelector {
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row;
+  max-width: 650px;
+  margin: auto;
+  justify-content: space-between;
+}
+#filmSelector span {
+  background-color: #b4b4b4;
+  padding-top: 12px;
+  width: 100px;
+  height: 35px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 7px;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 1px 2px 3px #000000;
+  transition: box-shadow 0.2s, background-color 0.2s;
+}
+#filmSelector span:hover {
+  background-color: #c0c0c0;
+  box-shadow: 1px 3px 3px #000000;
+}
+#filmSelector span:active {
+  background-color: #999999;
+  box-shadow: 1px 1px 1px #000000;
+}
