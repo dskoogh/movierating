@@ -1,5 +1,7 @@
 import {movieData} from "./data";
 
+import $ from "jquery";
+
 //let movieData = require("./data");
 
 var chooseFilm = 0;
