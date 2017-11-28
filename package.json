@@ -4,6 +4,7 @@
   "description": "",
   "main": "distribution/bundle.js",
   "scripts": {
+    "lintjs": "eslint .",
     "build": "npm run bundle && npm run less && npm run copyindex",
     "copyindex": "cp recension.html distribution/recension.html",
     "styles": "lessc style.less style.css",
@@ -18,7 +19,9 @@
     "semver": "^5.4.1"
   },
   "devDependencies": {
+    "eslint": "^4.12.0",
     "mocha": "^4.0.1",
+    "stylelint": "^8.3.1",
     "webpack": "^3.8.1"
   }
 }
