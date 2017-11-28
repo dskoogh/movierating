@@ -28,5 +28,11 @@ let movieData = [
         title: "Avatar",
         description: "A paraplegic marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home.",
         actors: ["Sam Worthington", "Zoe Saldana", "Sigourney Weaver"]
+    },
+    {
+        image: "https://secure.sfanytime.se/movieimages/COVER/297431a4-37ca-42c1-8e99-a04b00a68382_COVER.jpg",
+        title: "SOS",
+        description: "The landlubber Stig-Helmer and his Norwegian friend Ole get on a barge by mistake. They arrive to an island in the archipelago and have to spend Midsummer among the fancy rich people, their champagne parties, their summer houses and the annual yacht race.",
+        actors: ["Lasse Åberg", "Jon Skolmen", "Birgitte Söndergaard"]
     }
 ]
