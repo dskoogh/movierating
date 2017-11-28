@@ -8,7 +8,7 @@
     "lintless": "stylelint style.less",
     "build": "npm run bundle && npm run styles && npm run copyindex",
     "styles": "lessc style.less distribution/style.css",
-    "copyindex": "cp recension.html distribution/recension.html",
+    "copyindex": "cp recension.html distribution/index.html",
     "bundle": "webpack"
   },
   "author": "",
