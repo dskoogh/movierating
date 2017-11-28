@@ -1,3 +1,5 @@
+let movieData = require("./data");
+
 var chooseFilm = 0;
 
 function renderMovie(movie, film){
@@ -113,8 +115,6 @@ document.querySelector("#filmSelector")
         }
     }
 );
-
-import {movieData} from "./data";
 
 createMovieButtons(movieData);
 
