@@ -1,4 +1,6 @@
-let movieData = require("./data");
+import {movieData} from "./data";
+
+//let movieData = require("./data");
 
 var chooseFilm = 0;
 
