@@ -1,4 +1,4 @@
-let movieData = [
+export const movieData = [
     {
         image: "http://www.spelochfilm.se/wp-content/uploads/2017/03/inception2.jpg",
         title: "Inception",

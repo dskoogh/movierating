@@ -2,8 +2,13 @@
   "name": "angular",
   "version": "1.0.0",
   "description": "",
-  "main": "code.js",
+  "main": "distribution/bundle.js",
   "scripts": {
+    "build": "npm run bundle && npm run less && npm run copyindex",
+    "copyindex": "cp recension.html distribution/recension.html",
+    "styles": "lessc style.less style.css",
+    "bundle": "webpack",
+    "lintless": "stylelint style.less",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -13,6 +18,7 @@
     "semver": "^5.4.1"
   },
   "devDependencies": {
-    "mocha": "^4.0.1"
+    "mocha": "^4.0.1",
+    "webpack": "^3.8.1"
   }
 }

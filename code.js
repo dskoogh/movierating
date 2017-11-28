@@ -114,7 +114,8 @@ document.querySelector("#filmSelector")
     }
 );
 
+import {movieData} from "./data";
+
 createMovieButtons(movieData);
 
 renderMovie(movieData, chooseFilm);
-
