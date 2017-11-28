@@ -4,7 +4,6 @@
   "description": "",
   "main": "distribution/bundle.js",
   "scripts": {
-    "lint": "npm run lintjs && npm run lintless",
     "lintjs": "eslint .",
     "build": "npm run bundle && npm run less && npm run copyindex",
     "copyindex": "cp recension.html distribution/recension.html",
