@@ -5,12 +5,11 @@
   "main": "distribution/bundle.js",
   "scripts": {
     "lintjs": "eslint .",
-    "build": "npm run bundle && npm run less && npm run copyindex",
-    "copyindex": "cp recension.html distribution/recension.html",
-    "styles": "lessc style.less style.css",
-    "bundle": "webpack",
     "lintless": "stylelint style.less",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run bundle && npm run styles && npm run copyindex",
+    "styles": "lessc style.less distribution/style.css",
+    "copyindex": "cp recension.html distribution/recension.html",
+    "bundle": "webpack"
   },
   "author": "",
   "license": "ISC",
