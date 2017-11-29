@@ -1,6 +1,6 @@
 export type Review = {
-    imgUrl: string
+    image: string
     title: string
-    review: string
+    description: string
     actors: string[]
 }

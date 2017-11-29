@@ -1,11 +1,12 @@
 // Imports
-import {movieData} from "./data";
+import { Review } from "./interface";
+import { movieData } from "./data";
 import * as $ from "jquery";
 //let movieData = require("./data");
 
 var chooseFilm = 0;
 
-function renderMovie(data, film){
+function renderMovie(data: Review, film){
     document.querySelector("#image img").setAttribute("src", movieData[film].image);
     document.getElementById("movietitle").innerText = movieData[film].title;
     document.getElementById("prop").innerText = movieData[film].description;
