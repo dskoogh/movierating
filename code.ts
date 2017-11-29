@@ -6,7 +6,7 @@ import * as $ from "jquery";
 
 var chooseFilm = 0;
 
-function renderMovie(data: Review, film){
+function renderMovie(data: Review[], film){
     document.querySelector("#image img").setAttribute("src", movieData[film].image);
     document.getElementById("movietitle").innerText = movieData[film].title;
     document.getElementById("prop").innerText = movieData[film].description;
