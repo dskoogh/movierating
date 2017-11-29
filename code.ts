@@ -2,7 +2,14 @@
 import { Review } from "./interface";
 import { movieData } from "./data";
 import * as $ from "jquery";
+import * as angular from "angular";
 //let movieData = require("./data");
+
+let app = angular.module("reviewApp", []);
+
+app.controller("reviewController", function($scope){
+    $scope.message = "Hello from Angular!";
+});
 
 var chooseFilm = 0;
 

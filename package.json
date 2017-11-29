@@ -1,5 +1,5 @@
 {
-  "name": "angular",
+  "name": "engular",
   "version": "1.0.0",
   "description": "",
   "main": "distribution/bundle.js",
@@ -14,10 +14,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angular": "^1.6.7",
     "react": "^16.1.1",
     "semver": "^5.4.1"
   },
   "devDependencies": {
+    "@types/angular": "^1.6.39",
     "@types/jquery": "^3.2.16",
     "jquery": "^3.2.1",
     "less": "2.7.3",
