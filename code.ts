@@ -1,19 +1,19 @@
+// Imports
 import {movieData} from "./data";
 import * as $ from "jquery";
-
 //let movieData = require("./data");
 
 var chooseFilm = 0;
 
-function renderMovie(movie, film){
-    document.querySelector("#image img").setAttribute("src", movie[film].image);
-    document.getElementById("movietitle").innerText = movie[film].title;
-    document.getElementById("prop").innerText = movie[film].description;
+function renderMovie(data, film){
+    document.querySelector("#image img").setAttribute("src", movieData[film].image);
+    document.getElementById("movietitle").innerText = movieData[film].title;
+    document.getElementById("prop").innerText = movieData[film].description;
             
     document.querySelector("#actrs").innerHTML = "";
-    for (let i=0; i<movie[film].actors.length; i++){
+    for (let i=0; i<movieData[film].actors.length; i++){
         let node = document.createElement("li");
-        node.innerText = movie[film].actors[i];
+        node.innerText = movieData[film].actors[i];
         document.querySelector("#actrs").appendChild(node);
     }
 };
