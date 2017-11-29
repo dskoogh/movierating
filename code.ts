@@ -1,6 +1,5 @@
 import {movieData} from "./data";
-
-import $ from "jquery";
+import * as $ from "jquery";
 
 //let movieData = require("./data");
 
@@ -88,7 +87,8 @@ function createMovieButtons(movies) {
 
 document.querySelector("#stars")
     .addEventListener("click", function(e) {
-        let star = parseInt(e.target.id.substring(4));
+        // tslint:disable-next-line
+        let star = parseInt((e.target as any).id.substring(4));
         if (!isNaN(star)) {
             changeStarRating(star);
         } else return;
@@ -97,7 +97,7 @@ document.querySelector("#stars")
 
 document.querySelector("#stars")
     .addEventListener("mouseover", function(e){
-    let star = parseInt(e.target.id.substring(4));
+    let star = parseInt((e.target as any).id.substring(4));
     //console.log(star);
     hoverStarRating(star);
 });
@@ -113,7 +113,7 @@ document.querySelector("#stars")
 
 document.querySelector("#filmSelector")
     .addEventListener("click", function(e){
-        let button = parseInt(e.target.id.substring(1));
+        let button = parseInt((e.target as any).id.substring(1));
         if (!isNaN(button)) {
             renderMovie(movieData, button);
         }

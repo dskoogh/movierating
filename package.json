@@ -4,7 +4,7 @@
   "description": "",
   "main": "distribution/bundle.js",
   "scripts": {
-    "lintjs": "eslint .",
+    "lintts": "tslint -c tslint.json '*.ts'",
     "lintless": "stylelint style.less",
     "build": "npm run bundle && npm run styles && npm run copyindex",
     "styles": "lessc style.less distribution/style.css",
